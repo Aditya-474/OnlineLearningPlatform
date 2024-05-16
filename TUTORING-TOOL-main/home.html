@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Online Learning Platform - Home</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to the Online Learning Platform</h1>
+        </header>
+
+        <nav>
+            <ul class="nav-links"> <!-- Add the "nav-links" class here -->
+                <li class="homee"><a href="/">Home</a></li>
+                <li><a href="search.html">Search Course</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+            <div class="menu-button">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+
+        <section id="search-section">
+            <h2>Find a Teacher</h2>
+            <br>
+            <input type="text" id="search-topic"
+                placeholder="Enter a Teacher...">
+            <button id="search-button">Search</button>
+        </section>
+
+        <section id="teacher-list">
+
+            <div class="teacher-card">
+                <h3>Mr. John Smith</h3>
+                <p>Subject: Mathematics</p>
+                <p>Rating: 4.7</p>
+                <p>Description: I have 10 years of experience in teaching
+                    mathematics. I love making math easy and engaging for my
+                    students.</p>
+                <button class="learn-more-button" onclick="toggleDetails(this)">Learn
+                    More</button>
+                <div class="teacher-details">
+                    <p>Contact: john.smith@email.com</p>
+                    <p>Phone: +1 (123) 456-7890</p>
+                </div>
+            </div>
+
+            <div class="teacher-card">
+                <h3>Dr. Jane Doe</h3>
+                <p>Subject: Science</p>
+                <p>Rating: 4.9</p>
+                <p>Description: I hold a Ph.D. in Chemistry and have a passion
+                    for teaching science. Let's explore the wonders of the
+                    natural world together!</p>
+                <button class="learn-more-button" onclick="toggleDetails(this)">Learn
+                    More</button>
+                <div class="teacher-details show-details">
+                    <!-- Initially hidden with the "show-details" class -->
+                    <p>Contact: jane.doe@email.com</p>
+                    <p>Phone: +1 (987) 654-3210</p>
+                </div>
+            </div>
+
+            <div class="teacher-card">
+                <h3>Ms. Emily Johnson</h3>
+                <p>Subject: English Literature</p>
+                <p>Rating: 4.6</p>
+                <p>Description: I'm passionate about literature and love helping
+                    students discover the beauty of written words. Let's dive
+                    into the world of classics!</p>
+                <button class="learn-more-button" onclick="toggleDetails(this)">Learn
+                    More</button>
+                <div class="teacher-details">
+                    <p>Contact: emily.johnson@email.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2023 Online Learning Platform</p>
+        </footer>
+        <script src="./index.js"></script>
+    </body>
+</html>
